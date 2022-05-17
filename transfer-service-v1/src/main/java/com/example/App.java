@@ -15,9 +15,9 @@ public class App {
 		TransferService transferService = new TransferServiceImpl(jdbcAccountRepository);
 
 		// use phase
-		transferService.transfer(300, "10", "20");
+		transferService.transfer(300, "1", "2");
 		System.out.println();
-		transferService.transfer(300, "10", "20");
+		transferService.transfer(300, "1", "2");
 
 		// destroy phase
 		transferService = null;
